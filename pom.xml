@@ -16,14 +16,16 @@
 	<url>http://www.shopeasy.com</url>
 	<description>Shopeasy</description>
 
-	<!-- <modules>
-		<module>EP-MAIN-MODEL</module>
-		<module>EP-MAIN-MODULES</module>
-		<module>EP-MAIN</module>
-		<module>EP-MART-MODEL</module>
+	<modules>
+<!-- 		<module>EP-MAIN-MODEL</module>
+ 		<module>EP-MAIN-MODULES</module>
+ -->		
+ 		<module>EP-MAIN</module>
+<!-- 		<module>EP-MART-MODEL</module>
 		<module>EP-MART</module>
-	</modules>
  -->
+ 	</modules>
+ 
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
