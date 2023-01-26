@@ -22,7 +22,8 @@
 		<module>EP-MAIN-MODULES</module>
 		
 		<module>EP-MAIN</module>
-		<!-- <module>EP-MART-MODEL</module> <module>EP-MART</module> -->
+		 <module>EP-MART-MODEL</module>
+<!-- 		 <module>EP-MART</module>  -->
 	</modules>
 
 	<properties>
