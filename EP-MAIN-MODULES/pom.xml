@@ -3,39 +3,28 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.2</version>
+		<groupId>com.shopeasy</groupId>
+		<artifactId>shopeasy</artifactId>
+		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shopeasy</groupId>
 	<artifactId>EP-MAIN-MODULES</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>3.2.5</version>
+	<packaging>jar</packaging>
 	<name>EP-MAIN-MODULES</name>
 	<description>Shopeasy main modules codebase</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<groupId>com.shopeasy</groupId>
+			<artifactId>EP-MAIN-MODEL</artifactId>
+			<version>3.2.5</version>
 		</dependency>
+			</dependencies>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+	
 
 </project>

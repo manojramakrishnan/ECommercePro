@@ -73,6 +73,11 @@
 			<version>3.2.5</version>
 		</dependency>
 		<dependency>
+			<groupId>com.shopeasy</groupId>
+			<artifactId>EP-MAIN-MODULES</artifactId>
+			<version>3.2.5</version>
+		</dependency>
+		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-ci</artifactId>
 			<exclusions>
