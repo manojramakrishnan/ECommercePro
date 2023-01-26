@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.2</version>
+		<version>2.5.12</version>
 	</parent>
 	<groupId>com.shopeasy</groupId>
 	<artifactId>shopeasy</artifactId>
@@ -20,7 +20,7 @@
 <!-- 		<module>EP-MAIN-MODEL</module>
  		<module>EP-MAIN-MODULES</module>
  -->		
- 		<module>EP-MAIN</module>
+ 	 	<module>EP-MAIN</module> 
 <!-- 		<module>EP-MART-MODEL</module>
 		<module>EP-MART</module>
  -->
