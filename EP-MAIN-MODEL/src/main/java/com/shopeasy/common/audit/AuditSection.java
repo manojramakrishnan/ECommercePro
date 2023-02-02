@@ -28,7 +28,7 @@ public class AuditSection implements Serializable {
 	@Column(name = "UPDT_ID", length = 60)
 	private String modifiedBy;
 
-	private AuditSection () {
+	public AuditSection () {
 		
 	}
 	

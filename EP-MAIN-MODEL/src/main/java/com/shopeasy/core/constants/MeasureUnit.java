@@ -1,5 +1,7 @@
 package com.shopeasy.core.constants;
 
-public class MeasureUnit {
+public enum MeasureUnit {
+	
+	KG, LB, CM, IN
 
 }
