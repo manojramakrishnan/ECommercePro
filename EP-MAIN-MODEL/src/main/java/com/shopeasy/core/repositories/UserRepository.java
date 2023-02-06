@@ -5,10 +5,12 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import com.shopeasy.core.model.common.CommonEntityList;
+import com.shopeasy.core.model.common.Criteria;
 import com.shopeasy.core.model.user.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Long>, UserCustomRepository {
+public interface UserRepository extends JpaRepository<User,Long>, UserDefinedRepository {
 
 	User findByUserName(String UserName);
 
@@ -25,6 +27,8 @@ public interface UserRepository extends JpaRepository<User,Long>, UserCustomRepo
 	List<User> findByStore(Integer id);
 
 	User findOne(Long userId);
+
+	
 	
 	
 }

@@ -4,17 +4,26 @@ import java.util.List;
 
 import org.jsoup.helper.Validate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 
 import com.shopeasy.core.dao.UserDAO;
 import com.shopeasy.core.exception.ServiceException;
+import com.shopeasy.core.model.common.CommonEntityList;
+import com.shopeasy.core.model.common.Criteria;
 import com.shopeasy.core.model.user.MerchantStore;
 import com.shopeasy.core.model.user.User;
+import com.shopeasy.core.model.user.UserCriteria;
 import com.shopeasy.service.UserService;
+import com.shopeasy.service.merchant.MerchantService;
 
 public class UserServiceImpl implements UserService{
 
 	@Autowired
 	private UserDAO userDAO;
+	
+	@Autowired
+	private MerchantService merchantService;
+	
 	
 	
 	@Override
@@ -83,7 +92,22 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public User findByStore(Long userId, String storeCode) throws ServiceException {
 		// TODO Auto-generated method stub
-		return userDAO.findByStore(userId,storeCode);
+		boolean isFound = merchantService.isStoreInGroup(storeCode);
+		return userDAO.findByStore(userId,storeCode,isFound);
+	}
+
+
+	@Override
+	public CommonEntityList<User> listByCriteria(Criteria criteria) throws ServiceException {
+		// TODO Auto-generated method stub
+		return userDAO.listByCriteria(criteria);
+	}
+
+
+	@Override
+	public Page<User> listByCriteria(UserCriteria criteria, int page, int count) throws ServiceException {
+		// TODO Auto-generated method stub
+		return userDAO.listByCriteria(criteria,page,count);
 	}
 
 
